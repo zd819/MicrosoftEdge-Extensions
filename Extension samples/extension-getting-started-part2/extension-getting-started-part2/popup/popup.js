@@ -1,3 +1,8 @@
+// Checks if extension button is pressed, this code runs in extension
+// In the onclick event, find the current browser tab. 
+// Then, use the chrome.tabs.sendmessage Extension API to send a message to that tab.
+// In that message, we include the URLof the image to display
+// We alsom make sure to send a unique ID to assign to the inserted image
 const sendMessageId = document.getElementById("sendmessageid");
 if (sendMessageId) {
     sendMessageId.onclick = function() {
@@ -10,6 +15,7 @@ if (sendMessageId) {
                     tabId: tabs[0].id
                 },
                 function(response) {
+                    console.log("Closed extension with response : ", response)
                     window.close();
                 }
             );

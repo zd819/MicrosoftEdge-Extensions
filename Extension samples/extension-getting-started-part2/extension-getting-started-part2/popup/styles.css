@@ -6,10 +6,25 @@ body {
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
   }
 .test2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
+    padding: 1px 3px;
+}
+.Title {
+  text-align: center;
+  font-size: 20px;
+  padding: 1px 3px;
+}
+
+.Profile{
+  text-align: right;
+  font-size: 13px;
+  padding: 1px 3px;
+  /* background-color: #336dab; */
+  border: none;
+  color: black;
 }

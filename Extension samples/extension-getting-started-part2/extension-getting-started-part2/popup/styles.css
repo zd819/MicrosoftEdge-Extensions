@@ -1,6 +1,59 @@
+@import url(‘https://fonts.googleapis.com/css2?family=Open+Sans&display=swap’);
+
+
+/* Sidebar stuff */
+/* *{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', 'sans-serif';
+} */
+
+.wrapper .sidebar{
+	background: rgb(5, 68, 104);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+.wrapper .sidebar .sideprofile{
+	margin-bottom: 30px;
+	text-align: center;
+  background-color: #336dab;
+
+}
+
+/* End Sidebar stuff */
+
+
+
 body {
     width: 400px;
   }
+
+/* Top Bar */
+.TopBar {
+  display: flex;
+  width: 95%;
+}
+
+.TopBar {
+  flex: 1;
+  border: 2px solid blueviolet;
+  margin: 10px;
+}
+
+.TopBar:first-child {
+  margin-right: 20px;
+}
+
+
+/* End Top bar */
 .button1 {
     background-color: #336dab;
     border: none;

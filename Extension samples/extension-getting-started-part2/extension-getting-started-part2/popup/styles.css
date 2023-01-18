@@ -40,6 +40,7 @@ body {
 .TopBar {
   display: flex;
   width: 95%;
+  height: 50px;
 }
 
 .TopBar {
@@ -49,8 +50,13 @@ body {
 }
 
 .TopBar:first-child {
-  margin-right: 20px;
+  margin-right: 5px;
 }
+
+#SettingsIcon {
+  width :75px;
+}
+
 
 
 /* End Top bar */

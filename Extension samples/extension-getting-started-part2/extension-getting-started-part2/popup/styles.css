@@ -173,9 +173,28 @@ body {
   border-radius: 8px;
   text-align: center;
   /* width:auto */
+  position:relative;
+  z-index: inherit;
   height: 100px;
   padding: 10px, 5px, 1px, 5px;/* top right bottom left */
 
+}
+
+.TopLevel{
+  position:relative;
+  z-index: 2;
+}
+
+#TopSidebar {
+  height:1000px;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  background-blend-mode: lighten;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  visibility:hidden;
 }
 /* List of Images
 #sc-1{

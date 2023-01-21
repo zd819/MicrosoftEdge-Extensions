@@ -1,5 +1,49 @@
 @import url(‘https://fonts.googleapis.com/css2?family=Open+Sans&display=swap’);
 
+/* Data Request */
+.DataRequest {
+  /* height:1000px;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  background-blend-mode: lighten;
+  top: 0px;
+  right: 0px;
+  z-index: 4; */
+  position: fixed;
+  visibility:hidden;
+}
+
+/* End Data Request */
+
+/* Connections */
+
+.Connections{
+  position:fixed;
+  visibility:hidden;
+}
+.Connection{
+  border: 3px solid;
+  border-radius: 8px;
+  text-align: center;
+  /* width:auto */
+  position:relative;
+  visibility:inherit;
+
+  z-index: 3;
+  height: 100px;
+  padding: 10px, 5px, 1px, 5px;/* top right bottom left */
+
+}
+/* End Connections */
+
+/* Manage */
+/* End Manage */
+
+/* Profile */
+/* End Profile */
+
+
+
 
 /* Sidebar stuff */
 /* *{
@@ -51,27 +95,48 @@ position: relative;
  top: 315px;
 }
 
+.SideBarButton{
+  position:relative;
+  visibility:visible;
+  z-index: 8;
+  top:10%;
+  /* border-radius: 8px; */
+  text-align: center;
+  transform: translate(10%, 10%);
+  align-items: center;
+  border: 2px solid blueviolet;
+  height: 5%;
+  width:80%;
+
+
+  /* border: 3px solid; */
+
+
+}
+
 .Menu{
-  border: 3px solid;
-  border-radius: 8px;
+  /* border: 3px solid; */
+  /* border-radius: 8px; */
+  cursor: pointer;
   text-align: center;
   /* width:auto */
   transform: translate(10%, 10%);
   align-items: center;
   position:relative;
-  background-color: #336dab;
+  /* background-color: #336dab; */
   border: 2px solid blueviolet;
-  z-index: 5;
+  z-index: 8;
   height: 5%;
   width:80%;
   opacity: 1;
   top:10%;
   font-size: 16px;
-  background-color: rgba(14, 27, 150, 1); /* Black w/ opacity */
+  background-color: rgb(65, 219, 247); /* Black w/ opacity */
   padding: 10px, 5px, 1px, 5px;/* top right bottom left */
+  /* visibility:inherit; */
 }
 
-.rectangle {
+.rectangle { 
   height:1000px;
   width: 150px;
   background-color: rgb(0, 0, 0);
@@ -79,7 +144,7 @@ position: relative;
   position: fixed;
   top: 0px;
   right: 0px;
-  z-index: 4;
+  z-index: 5;
   visibility:hidden;
 }
 
@@ -93,14 +158,14 @@ position: relative;
   display: flex;
   width: 95%;
   height: 50px;
-}
-
-.TopBar {
   flex: 1;
   border: 2px solid blueviolet;
   margin: 10px;
   position:relative;
-  z-index: 4;
+  z-index: 5; 
+  /* z-index = 5 makes purlpe box visible over sidebar */
+  /* z-index = 4 makes topbar and settings behind = BAD*/
+
 }
 
 .TopBar:first-child {
@@ -109,9 +174,11 @@ position: relative;
 
 #SettingsIcon {
   width :75px;
-  position: inherit;
-  z-index: 5;
+  position: relative;
+  z-index: 6;
 }
+
+
 
 
 

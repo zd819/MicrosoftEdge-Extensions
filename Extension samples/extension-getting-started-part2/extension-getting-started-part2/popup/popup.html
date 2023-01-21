@@ -15,90 +15,135 @@
   </head>
   <body>
     <!-- Header for sidebar -->
-  <div class="TopLevel">
-    
-    <div class="rectangle" id="TopSidebar">
+  <div class="TopLevel" id="TopLevel">
 
-      <button class="Menu" id="Menu1">
+    <div class="DataRequest">
+      <h1 class="Request" id="Request1">
+        Data Request 1 : Accessing ...
+      </h1>
+      <h1 class="Request" id="Request2">
+        Data Request 2 : Accessing ...
+      </h1>
+      <h1 class="Request" id="Request3">
+        Data Request 3 : Accessing ...
+      </h1>
+    </div>
+
+    <div class="ProfilePage">
+      
+    </div>
+
+    <div class="Connections" id="Connections">
+      <h1 class="Connection" id="Connection1">
+        Amazon.com
+        Accessing ...
+      </h1>
+      <h1 class="Connection" id="Connection2">
+        Google.com
+        Accessing ...
+      </h1>
+      <h1 class="Connection" id="Connection3">
+        BoohooMan.com
+        Accessing ...
+      </h1>
+      <h1 class="Connection" id="Connection4">
+        CambridgeAnalytica.com
+        Accessing ...
+      </h1>
+    </div>
+
+    <div class="rectangle" id="TopSidebar">
+      <!-- <button type="button" class="SideBarButton" id="ConnectionsButton">
+        Connections2
+      </button> -->
+      <button type="button" class="Menu" id="Menu 1">
+        Main
+      </button>
+      <button type="button" class="Menu" id="Menu 1">
+        Open Dashboard
+      </button>
+      <button type="button" class="Menu" id="Menu 1">
         Soul Model
       </button> 
-      <button class="Menu" id="Menu4">
+      <button type="button" class="Menu" id="Menu 2">
         Profile
       </button>
-      <button class="Menu" id="Menu2">
+      <button type="button" class="Menu" id="Menu 3">
         Connections
       </button>
-      <button class="Menu" id="Menu3">
+      <button type="button" class="Menu" id="Menu 4">
         Rewards
       </button>
-  
-  
     </div>
-    <div class=”wrapper”>
-      <!--Top Menu & Menu button -->
-         <div class="sidebar">
-             <div class="sideprofile">
-                 <!--Profile Image -->
-                 <!--Profile Title & Descruption-->
-             </div>
-              <!--Menu item-->
-        </div>
-         
-     </div>
 
-    <!-- End of sidebar  -->
-    <div class="TopBar">
-      <div class="TopBar Profile" id="Profile"></div>
-      <button class="btn" id="SettingsIcon">
-        <!-- <i class="fa-solid fa-brain-circuit"></i> -->
-        <i class="fa fa-bars" id="Settings"></i>
-        <!-- <i class="fa-sharp fa-solid fa-brain-circuit"></i> -->
-      </button>
-      <!-- <button id="SettingsIcon" class="Settings" onclick=hideElement() >Settings</div> -->
+    <div class="Manage">
+      
     </div>
-    <div class="Title" id="title"></div>
-    <h1>Hello, my name is <span class="name" id="name2"> removed </span></h1>
-    <!-- <div id="title" class="title">
-    </div>            -->
-    <div id="qrcode" class="qrcode">
-    </div> 
-    <h1 class="Request" id="Request1">
-      Data Request 1 : Accessing ...
-    </h1>
-    <h1 class="Request" id="Request2">
-      Data Request 2 : Accessing ...
-    </h1>
-    <h1 class="Request" id="Request3">
-      Data Request 3 : Accessing ...
-    </h1>
-    <!-- <button onclick=dothis()>
-    </button> -->
 
-    <!-- <ul>
-      <li class="sc-1">
-        Text 1
-      </li>
-      <li class="sc-2">
-        Text 2
-      </li>
-    </ul> -->
-    <img id="myImg" src="../images/stars.jpeg" alt="Northern Lights, Norway" width="300" height="200">
+    <div class="MainPage" id="MainPage">
+      <div class=”wrapper”>
+        <!--Top Menu & Menu button -->
+          <div class="sidebar">
+              <div class="sideprofile">
+                  <!--Profile Image -->
+                  <!--Profile Title & Descruption-->
+              </div>
+                <!--Menu item-->
+          </div>
+          
+      </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
-      <div id="caption"></div>
-    </div>
-  </div>
+      <!-- End of sidebar  -->
+      <div class="TopBar" id="TopBar">
+        <div class="TopBar Profile" id="Profile"></div>
+        <button class="btn" id="SettingsIcon">
+          <!-- <i class="fa-solid fa-brain-circuit"></i> -->
+          <i class="fa fa-bars" id="Settings"></i>
+          <!-- <i class="fa-sharp fa-solid fa-brain-circuit"></i> -->
+        </button>
+        <!-- <button id="SettingsIcon" class="Settings" onclick=hideElement() >Settings</div> -->
+      </div>
+      <div class="Title" id="title"></div>
+      <h1>Hello, my name is <span class="name" id="name2"> removed </span></h1>
+      <!-- <div id="title" class="title">
+      </div>            -->
+      <div id="qrcode" class="qrcode">
+      </div> 
+      <!-- <button onclick=dothis()>
+      </button> -->
 
-    <!-- <img src="../images/stars.jpeg" class="Soul" id="Soul"> -->
+      <!-- <ul>
+        <li class="sc-1">
+          Text 1
+        </li>
+        <li class="sc-2">
+          Text 2
+        </li>
+      </ul> -->
+      <img id="myImg" src="../images/stars.jpeg" alt="Northern Lights, Norway" width="300" height="200">
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+      <!-- <img src="../images/stars.jpeg" class="Soul" id="Soul"> -->
     <h1 class="test1">Oneiros Terminal</h1>
     <h2 class="test2">Let Amazon.com access Intrest Model</h2>
     <button class="button1" id="sendmessageid">Give Access</button>
+
+    </div>
+    
+  </div>
+
+    
     <script src="popup.js"></script>
     <script src="display.js"></script>
     <script src="index.js"></script>  
+    <script src="./Sidebar/sidebar.js"></script>
+    <script src="./Connections/Connections.js"></script>
     <script src="./data/datarequest.js"></script>  
     <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
   </body>

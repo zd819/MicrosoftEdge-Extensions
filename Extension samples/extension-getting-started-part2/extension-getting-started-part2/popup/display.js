@@ -42,6 +42,11 @@ function ToggleSideBar() {
             element.style.visibility = "hidden";
           // code block
       }
+      
+    // TopBar = document.getElementById('TopBar');
+    // TopBar.style.visibility = 'hidden';
+    // Settings = document.getElementById('SettingsIcon');
+    // Settings.style.visibility = 'visible';
        
 }
 

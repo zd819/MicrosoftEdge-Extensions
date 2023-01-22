@@ -221,10 +221,21 @@ position: relative;
   width: 50%;
 }
 
+/* .FlameContainer{
+  text-align: center;
+} */
 #myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  width:200px;
+  height:300px;
+  /* /* display: flex;
+  justify-content: center; */
+
+  /* text-align: center;
+  font-size: 20px;
+  padding: 1px 3px; */ 
 }
 
 #myImg:hover {opacity: 0.7;}

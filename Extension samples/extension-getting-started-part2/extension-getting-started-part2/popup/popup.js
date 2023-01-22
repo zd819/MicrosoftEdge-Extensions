@@ -28,3 +28,28 @@ if (sendMessageId) {
         });
     };
 }
+
+function openTab(){
+    var newTab = chrome.tabs.create({
+        url:'https://localhost:8080',
+        active:true
+    })
+}
+
+
+// const openDashboard = document.getElementById("openDashboard");
+// if (openDashboard) {
+//     openDashboard.onclick = function() {
+//         var newTab = browser.tabs.create({
+//                     url:'https://localhost:8080',
+//                     active:true
+//                 })
+//         }
+// }
+
+var openD = document.getElementById("openDashboard");
+openD.addEventListener("click", openTab);
+
+
+
+// browser.browserAction.onClicked.addListener(openTab)

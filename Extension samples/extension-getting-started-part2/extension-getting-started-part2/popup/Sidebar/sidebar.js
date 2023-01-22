@@ -3,16 +3,19 @@ function MainVisible() {
     console.log("ConnectionsVisible1");
     var TopLevel = document.getElementById('TopLevel');
     // element.innerHTML += "Over!<br>";
-    TopLevel.style.visibility = 'hidden';
-    console.log("ConnectionsVisible2");
+    // TopLevel.style.visibility = 'hidden';
+    TopLevel.toggleAttribute("visibility");
+    console.log(TopLevel.style.display, " ??? Display");
     var MainPage = document.getElementById('MainPage');
     // element.innerHTML += "Over!<br>";
     MainPage.style.visibility = 'visible';
     console.log("ConnectionsVisible3");
 
+    
+
     var SettingsIcon = document.getElementById('SettingsIcon');
     // element.innerHTML += "Over!<br>";
-    // SettingsIcon.style.visibility = 'visible';
+    SettingsIcon.style.visibility = 'visible';
 
 }
 

@@ -27,7 +27,7 @@ function GetProfile(){
     nameVisible.innerHTML = "Signed in as : " + userName;
 };
 
-async function OnShowQRCode(){
+async function ShowInfo(){
     console.log("working");
     // Get active tab and retrive url and title.
     // Added await and changed currentWindow: true to get working
@@ -35,7 +35,7 @@ async function OnShowQRCode(){
     await chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
         var url = tabs[0].url;
         var title = tabs[0].title;
-        ShowQRCode(url); 
+        // ShowQRCode(url); 
         ShowTitle(title);   
         GetProfile();    
     });
@@ -50,4 +50,4 @@ async function OnShowQRCode(){
 ////////////////////////////////////////////////////////////////////////////////
 
 // Event binding.
-document.addEventListener("onpageshow", OnShowQRCode()); 
+document.addEventListener("onpageshow", ShowInfo()); 

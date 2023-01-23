@@ -17,7 +17,7 @@ function ShowQRCode(url){
 function ShowTitle(title){
     // jQuery("#title").html(title);
     const nameVisible = document.getElementById("title");
-    nameVisible.innerHTML = "Viewing : " + (title);
+    nameVisible.innerHTML = "Data Request From : " + (title);
 };
 
 function GetProfile(){

@@ -11,5 +11,5 @@
 
 
 
-var DataRequestActive = document.getElementById("SettingsIcon");
-SettingsIcon.addEventListener("click", click);
+// var DataRequestActive = document.getElementById("SettingsIcon");
+// SettingsIcon.addEventListener("click", click);

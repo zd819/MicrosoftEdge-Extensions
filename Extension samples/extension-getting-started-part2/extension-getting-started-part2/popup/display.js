@@ -69,6 +69,6 @@ document.addEventListener("onpageshow", hide());
 // }
 
 
-var SettingsIcon = document.getElementById("SettingsIcon");
-SettingsIcon.addEventListener("click", click);
+// var SettingsIcon = document.getElementById("SettingsIcon");
+// SettingsIcon.addEventListener("click", click);
 // SettingsIcon.addEventListener("mouseover", over);

@@ -1,6 +1,6 @@
 async function KeyRequest() {
     console.log("Requesting Key for Data Request")
-    return fetch('http://localhost:8080/login', {
+    return fetch('http://localhost:8080/exec', {
       method: 'GET',
       headers: {
         'service':'Amazon.com',
